@@ -4,9 +4,11 @@
 
 // Note that the principal is not taxed but only the year's accrued interest
 
+
 function calculateYears(principal, interest, tax, desired) {
   // create variables that will keep track of the years and the principal increasing
   const yearValue = []
+  // let instead of const because in need the value to change
   let newPrincipal = principal
 // base case principal not the same as desired then...
   if (principal != desired) {
